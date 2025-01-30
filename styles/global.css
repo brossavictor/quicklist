@@ -63,7 +63,7 @@ main {
 	}
 }
 
-.searchbar {
+#add-bar {
 	font: var(--label);
 }
 
