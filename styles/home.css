@@ -1,0 +1,50 @@
+main {
+	width: 40rem;
+	margin: auto;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	margin-top: 1.5rem;
+	margin-bottom: 4rem;
+}
+
+.title {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2.75rem;
+	row-gap: 1rem;
+}
+
+.title a {
+	display: flex;
+	flex-direction: row;
+}
+
+.title a svg {
+	width: 1rem;
+	height: 1rem;
+	aspect-ratio: 1/1;
+}
+
+.searchbar {
+	display: flex;
+	gap: 1rem;
+	margin-bottom: 2.5rem;
+}
+
+.searchbar > * {
+	height: 2.75rem;
+	border-radius: 1.25rem;
+}
+
+.searchbar > input {
+	width: 30rem;
+}
+
+.searchbar > button {
+	width: 10rem;
+}
