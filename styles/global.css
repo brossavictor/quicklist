@@ -65,19 +65,6 @@ main {
 
 .searchbar {
 	font: var(--label);
-
-	input {
-		background-color: var(--background-secondary);
-		border: 2px solid var(--border-primary);
-
-		&:hover,
-		&:focus,
-		&:focus-visible,
-		&:focus-within {
-			outline: none;
-			border: 2px solid var(--border-hover);
-		}
-	}
 }
 
 .grid {
