@@ -31,6 +31,13 @@
 	--paragraph: 500 1rem/1.25 var(--font-family);
 	--link: 500 0.875rem/1.14 var(--font-family);
 }
+body {
+	background-color: var(--background-primary);
+}
+main {
+	width: 40rem;
+	margin: auto;
+}
 
 .title h1 {
 	font: var(--title);
@@ -52,6 +59,23 @@
 			path {
 				stroke: var(--color-brand-hover);
 			}
+		}
+	}
+}
+
+.searchbar {
+	font: var(--label);
+
+	input {
+		background-color: var(--background-secondary);
+		border: 2px solid var(--border-primary);
+
+		&:hover,
+		&:focus,
+		&:focus-visible,
+		&:focus-within {
+			outline: none;
+			border: 2px solid var(--border-hover);
 		}
 	}
 }
