@@ -3,7 +3,7 @@
 	gap: 0.75rem;
 }
 
-.grid div {
+.item-card {
 	background-color: var(--background-secondary);
 	border-radius: 1rem;
 
@@ -24,7 +24,7 @@
 	margin-right: 1rem;
 }
 
-.grid div img {
+.item-card img {
 	width: 1.5rem;
 	height: 1.5rem;
 	aspect-ratio: 1/1;

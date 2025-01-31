@@ -17,6 +17,19 @@ header {
 .title a {
 	display: flex;
 	flex-direction: row;
+
+	&:hover,
+	&:focus,
+	&:focus-visible,
+	&:focus-within {
+		color: var(--color-brand-hover);
+
+		svg {
+			path {
+				stroke: var(--color-brand-hover);
+			}
+		}
+	}
 }
 
 .title a svg {
@@ -59,11 +72,13 @@ header {
 	border-style: none;
 	color: var(--background-secondary);
 
-	&:hover,
-	&:focus,
-	&:focus-visible,
-	&:focus-within {
-		outline: none;
-		background-color: var(--color-brand-hover);
+	&:enabled {
+		&:hover,
+		&:focus,
+		&:focus-visible,
+		&:focus-within {
+			outline: none;
+			background-color: var(--color-brand-hover);
+		}
 	}
 }

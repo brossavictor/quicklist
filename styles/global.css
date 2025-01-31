@@ -48,19 +48,6 @@ main {
 	color: var(--color-brand);
 
 	text-decoration: none;
-
-	&:hover,
-	&:focus,
-	&:focus-visible,
-	&:focus-within {
-		color: var(--color-brand-hover);
-
-		svg {
-			path {
-				stroke: var(--color-brand-hover);
-			}
-		}
-	}
 }
 
 #add-bar {
