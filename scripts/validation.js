@@ -1,6 +1,6 @@
 export function validation() {
 	const button = document.getElementById("add-item");
-	const input = document.querySelector("input");
+	const input = document.getElementById("item");
 
 	input.addEventListener("input", () => {
 		if (input.value == "") {

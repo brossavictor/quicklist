@@ -1,6 +1,6 @@
 export function addItem() {
-	const form = document.querySelector("form");
-	const input = document.querySelector("input");
+	const form = document.getElementById("add-bar");
+	const input = document.getElementById("item");
 	const list = document.getElementById("buy-list");
 
 	let item = form.addEventListener("submit", (event) => {
@@ -25,8 +25,12 @@ export function addItem() {
 			checkbox.type = "checkbox";
 			deleteIcon.src = "assets/delete-small.svg";
 
+			console.log(itemCard);
+
 			itemCard.append(checkbox, newItemName, deleteIcon);
-			list = list.prepend(itemCard);
+			list.prepend(itemCard);
+
+			form.reset();
 		} else throw new Error("Something went wrong!");
 	});
 }

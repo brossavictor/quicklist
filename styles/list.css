@@ -30,4 +30,15 @@
 	aspect-ratio: 1/1;
 
 	margin-left: auto;
+
+	&:hover,
+	&:focus,
+	&:focus-visible,
+	&:focus-within {
+		svg {
+			path {
+				stroke: var(--color-brand-hover);
+			}
+		}
+	}
 }

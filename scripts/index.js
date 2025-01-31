@@ -1,5 +1,7 @@
-import { addItem } from "./addItem.js";
+import { icons } from "./icons.js";
 import { validation } from "./validation.js";
+import { addItem } from "./addItem.js";
 
-addItem();
+icons();
 validation();
+addItem();
