@@ -36,32 +36,11 @@ body {
 }
 main {
 	width: 40rem;
+	height: 100vh;
 	margin: auto;
-}
-
-.title h1 {
-	font: var(--title);
-}
-
-.title a {
-	font: var(--link);
-	color: var(--color-brand);
-
-	text-decoration: none;
-}
-
-#add-bar {
-	font: var(--label);
-}
-
-.grid {
-	font: var(--paragraph);
-}
-
-.warning {
-	font: var(--label);
 }
 
 button:enabled {
 	cursor: pointer;
+	border-style: none;
 }

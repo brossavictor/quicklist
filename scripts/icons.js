@@ -11,15 +11,8 @@ export function icons() {
 			}
 		});
 
-	fetch("../assets/delete-small.svg")
-		.then((response) => response.text())
-		.then((data) => {
-			let icons = document.querySelectorAll(".delete-icon");
-
-			icons.forEach((icon) => {
-				icon.outerHTML = data;
-			});
-		});
+	let icons = document.querySelectorAll(".delete-icon");
+	icons.forEach(trashIcon);
 }
 
 export function trashIcon(deleteIcon) {
