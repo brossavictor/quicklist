@@ -24,12 +24,16 @@
 	margin-right: 1rem;
 }
 
+.item-card button {
+	margin-left: auto;
+	background-color: var(--background-secondary);
+	border-style: none;
+}
+
 .item-card img {
 	width: 1.5rem;
 	height: 1.5rem;
 	aspect-ratio: 1/1;
-
-	margin-left: auto;
 
 	&:hover,
 	&:focus,

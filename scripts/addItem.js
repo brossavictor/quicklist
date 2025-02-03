@@ -24,8 +24,7 @@ export function addItem() {
 			itemCard.classList.add("item-card");
 			checkbox.type = "checkbox";
 			deleteIcon.src = "assets/delete-small.svg";
-
-			console.log(itemCard);
+			deleteIcon.classList.add("delete");
 
 			itemCard.append(checkbox, newItemName, deleteIcon);
 			list.prepend(itemCard);
