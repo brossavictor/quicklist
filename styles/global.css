@@ -61,3 +61,7 @@ main {
 .warning {
 	font: var(--label);
 }
+
+button:enabled {
+	cursor: pointer;
+}

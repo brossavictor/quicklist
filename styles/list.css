@@ -30,7 +30,7 @@
 	border-style: none;
 }
 
-.item-card img {
+.item-card svg {
 	width: 1.5rem;
 	height: 1.5rem;
 	aspect-ratio: 1/1;
@@ -39,10 +39,8 @@
 	&:focus,
 	&:focus-visible,
 	&:focus-within {
-		svg {
-			path {
-				stroke: var(--color-brand-hover);
-			}
+		path {
+			stroke: var(--color-brand-hover);
 		}
 	}
 }

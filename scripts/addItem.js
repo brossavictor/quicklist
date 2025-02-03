@@ -1,3 +1,5 @@
+import { trashIcon } from "./icons.js";
+
 export function addItem() {
 	const form = document.getElementById("add-bar");
 	const input = document.getElementById("item");
@@ -17,16 +19,20 @@ export function addItem() {
 			let itemCard = document.createElement("div");
 			let checkbox = document.createElement("input");
 			let newItemName = document.createElement("p");
-			let deleteIcon = document.createElement("img");
+			let deleteButton = document.createElement("button");
+			let deleteIcon = document.createElement("svg");
 
-			newItemName.textContent = item;
+			trashIcon(deleteIcon);
 
 			itemCard.classList.add("item-card");
 			checkbox.type = "checkbox";
-			deleteIcon.src = "assets/delete-small.svg";
-			deleteIcon.classList.add("delete");
+			newItemName.textContent = item;
+			deleteButton.type = "button";
+			deleteButton.class = "delete";
 
-			itemCard.append(checkbox, newItemName, deleteIcon);
+			deleteButton.append(deleteIcon);
+			itemCard.append(checkbox, newItemName, deleteButton);
+
 			list.prepend(itemCard);
 
 			form.reset();
