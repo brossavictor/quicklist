@@ -1,5 +1,6 @@
-@import url(global.css);
-@import url(fonts.css);
-@import url(home.css);
-@import url(list.css);
 @import url(removed.css);
+@import url(list.css);
+@import url(home.css);
+@import url(fonts.css);
+@import url(global.css);
+@import url(media.css);

@@ -1,0 +1,17 @@
+@media (max-device-width: 768px) {
+	main {
+		max-width: 100%;
+		padding: 2rem;
+	}
+	header {
+		display: none !important;
+	}
+
+	#add-bar {
+		flex-direction: column;
+	}
+
+	#add-bar * {
+		width: 100% !important;
+	}
+}

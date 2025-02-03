@@ -31,12 +31,14 @@
 	--paragraph: 500 1rem/1.25 var(--font-family);
 	--link: 500 0.875rem/1.14 var(--font-family);
 }
+
 body {
 	background-color: var(--background-primary);
 }
+
 main {
 	width: 40rem;
-	height: 100vh;
+	height: 100%;
 	margin: auto;
 }
 
